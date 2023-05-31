@@ -1,59 +1,183 @@
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;800&display=swap');
+
+:root {
+	--fonte-padrao: 'Inter';
+
+	--branco-dnc: #FFFFFF;
+	--cinza-dnc: #BABABA;
+	--cinza-hover: #CCCCCC;
+	--preto-dnc: #303030;
+	--azul-botton: #0C70F2;
+	--azul-dnc: #0C70F240;
+}
 
 body {
 	margin: 0px;
 	padding: 0px;
+
+	background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%), #303030;
+	background-repeat: no-repeat;
 }
 
+/* Menu Principal */
 #main {
 	width: 100%;
 	height: 100px;
 	border: 1px solid black;
-	background-color: #303030;
+	background-color: var(--preto-dnc);
 
 	display: flex;
 	justify-content: space-between; /* Alinhamento do botão horizontal */
 	align-items: center; /* Alinhamento do botão vertical */
-	border-bottom: 1px solid #BABABA;
+	border-bottom: 1px solid var(--cinza-dnc);
 }
 
-#menu {
-	display: flex;
-	width: 45%;
-	justify-content: space-around;
-	align-items: center;
+	#menu {
+		display: flex;
+		width: 45%;
+		justify-content: space-around;
+		align-items: center;
 
-	margin-left: 5%;
-}
-
-#menu a {
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 25px;
-	color: #FFFFFF;
-
-	text-decoration: none;
-}
-
-	#menu a:hover {
-		color: #cccccc;
+		margin-left: 5%;
 	}
 
-#main button {
-	margin-right: 5%;
-	background-color: #0C70F2;
-	border: 0px;
+	#menu a {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 25px;
+		color: var(--branco-dnc);
 
-	height: 40px;
-	width: 80px;
+		text-decoration: none;
+	}
 
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 20px;
-	color: #FFFFFF;
+		#menu a:hover {
+			color: var(--cinza-hover);
+		}
 
-	background: #0C70F2;
-	box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+	#main button {
+		margin-right: 5%;
+		background-color: var(--azul-botton);
+		border: 0px;
+
+		height: 40px;
+		width: 80px;
+
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		color: var(--branco-dnc);
+
+		background: var(--azul-botton);
+		box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.251);
+		cursor: pointer;
+	}
+
+/* MENU FORMULÁRIO */
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
+
+	header {
+		color: var(--branco-dnc);
+		font-family: var(--fonte-padrao);
+	}
+
+	header h1 {
+		font-weight: 800;
+		font-size: 80px;
+		text-align: center;
+
+		margin-bottom: 26px;
+		margin-top: 100px;
+	}
+
+	header h2 {
+		font-weight: 500;
+		font-size: 40px;
+		text-align: center;
+
+		margin-bottom: 191px;
+	}
+
+	header .inverted-color {
+		background-color: black;
+	}
+
+	/* FOMULÁRIO */
+	form {
+		font-family: var(--fonte-padrao);
+		font-weight: 600;
+		font-size: 30px;
+
+		color: var(--branco-dnc);
+
+		width: 600px;
+	}
+
+	.group-form {
+		display: flex;
+		flex-direction: column;
+
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	form input {
+		font-family: var(--fonte-padrao);
+		font-weight: 400;
+		font-size: 20px;
+
+		background: rgba(57, 57, 57, 0.5);
+
+		height: 56px;
+		background: rgba(255, 255, 255, 0.9);
+		border-radius: 10px;
+		border: 0px;		
+	}
+
+	#space {
+		margin-top: 35px;
+	}
+
+	form input::placeholder {
+		color: rgba(57, 57, 57, 0.5);
+		padding-left: 17px;
+	}
+
+	.checkbox-itens label {
+		font-size: 25px;
+	}
+
+	.checkbox-itens {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	input[type="checkbox"] {
+		transform: scale(1.7);
+	}
+
+	input[type="submit"] {
+		font-weight: 600;
+		font-size: 32px;
+		color: var(--branco-dnc);
+
+		width: 100%;
+		height: 56px;
+		padding: 0px;
+
+		background: rgba(12, 112, 242, 0.9);
+		box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+
+		margin-top: 89px;
+		cursor: pointer;
+	}
