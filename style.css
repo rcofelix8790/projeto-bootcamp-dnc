@@ -8,7 +8,7 @@
 	--cinza-dnc: #BABABA;
 	--cinza-hover: #CCCCCC;
 	--preto-dnc: #303030;
-	--azul-botton: #0C70F2;
+	--azul-padrao: #0C70F2;
 	--azul-dnc: #0C70F240;
 }
 
@@ -58,7 +58,7 @@ body {
 
 	#main button {
 		margin-right: 5%;
-		background-color: var(--azul-botton);
+		background-color: var(--azul-padrao);
 		border: 0px;
 
 		height: 40px;
@@ -70,7 +70,7 @@ body {
 		font-size: 20px;
 		color: var(--branco-dnc);
 
-		background: var(--azul-botton);
+		background: var(--azul-padrao);
 		box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.251);
 		cursor: pointer;
 	}
@@ -181,3 +181,98 @@ section {
 		margin-top: 89px;
 		cursor: pointer;
 	}
+
+/* FOOTER MENU */
+footer {
+	width: 100%;
+	background: var(--azul-padrao);
+}
+
+	footer .lineone-footer {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	footer ul {
+		font-family: var(--fonte-padrao);
+		list-style: none;
+		padding: 0px;
+	}
+
+	footer nav {
+		display: flex; /* Alinhamento do h5 */
+		flex-direction: column;
+		align-items: center;
+
+		height: 430px;
+	}
+
+	footer h5 {
+		font-family: var(--fonte-padrao);
+		font-weight: 800;
+		font-size: 25px;
+
+		color: var(--branco-dnc);
+		background: black;
+		border-radius: 10px;
+
+		padding: 10px;
+		margin-bottom: 15px;
+		margin-top: 46px;
+		text-align: center;
+	}
+
+	footer ul li {
+		font-weight: 600;
+		font-size: 25px;
+		text-align: center;
+
+		margin: 20px 0px 20px 0px;
+	}
+
+	footer ul li a {
+		color: var(--branco-dnc);
+		text-decoration: none;
+	}
+
+	footer ul li a:hover {
+		color: var(--cinza-hover);
+	}
+
+	footer .address {
+		font-family: var(--fonte-padrao);
+		font-weight: 600;
+		font-size: 18px;
+		color: var(--branco-dnc);
+
+		text-align: center;
+		width: 20%;
+	}
+
+	footer .linetwo-footer {
+		height: 35px;
+		display: flex;
+		justify-content: center;
+		padding: 10px 0px 32px 0px;
+	}
+
+	footer .linetwo-footer a {
+		font-family: var(--fonte-padrao);
+		font-weight: 600;
+		font-size: 20px;
+		color: var(--branco-dnc);
+		text-decoration: none;
+		padding: 8px;
+	}
+
+	footer .linetwo-footer a:first-child {
+		border-right: 3px solid var(--branco-dnc);
+	}
+
+	footer .linetwo-footer a:hover {
+		color: var(--cinza-hover);
+	}
+
+/* MIDIA QUERY */
+@media only screen and (max-width: 600px)
