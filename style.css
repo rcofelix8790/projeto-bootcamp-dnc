@@ -275,4 +275,67 @@ footer {
 	}
 
 /* MIDIA QUERY */
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 37.5rem) {
+	
+	/* MENU */
+	#main {
+		flex-direction: column;
+		height: auto;
+	}
+
+	#menu {
+		flex-direction: column;
+		width: 100%;
+		margin: 0rem;
+	}
+
+	#menu a {
+		display: flex;
+		align-items: center;
+		height: 2.5rem;
+	}
+
+	#main button {
+		width: 100%;
+		margin: 0.625rem 0rem 0rem 0rem;
+	}
+
+	/* FOMULÁRIO */
+	section h1 {
+		font-size: 2.5rem;
+		margin-top: 1.875rem;
+	}
+
+	section h2 {
+		font-size: 1.5625rem;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	form {
+		width: 95%;
+		font-size: 1.25rem;
+	}
+
+	.checkbox-itens label {
+		font-size: 1.125rem;
+	}
+
+	input[type="checkbox"] {
+		transform: scale(1.2);
+	}
+	
+	/* FOOTER */
+	footer .lineone-footer {
+		flex-direction: column;
+	}
+
+	footer .address {
+		width: 95%;
+		margin-bottom: 1.5625rem;
+	}
+
+	footer .linetwo-footer a {
+		font-size: 1.125rem;
+	}
+}
